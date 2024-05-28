@@ -38,7 +38,7 @@ const Page = () => {
         {/* Radial Gradient to prevent sharp edges */}
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_10%,white)]"></div>
       </div>
-      <p className="rev-gradient text-center mt-2 text-neutral-300 relative z-20">
+      <p className="rev-gradient text-center mt-2  relative z-20">
         This is a site for soapreal. Made by 5skn
       
       </p>
