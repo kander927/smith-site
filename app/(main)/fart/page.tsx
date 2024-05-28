@@ -31,6 +31,7 @@ const Page = () => {
           particleDensity={1000}
           className="w-full h-full"
           particleColor="#FFFFFF"
+          fullScreen= {false}
         />
  
         {/* Radial Gradient to prevent sharp edges */}

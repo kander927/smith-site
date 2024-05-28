@@ -17,6 +17,8 @@ type ParticlesProps = {
   speed?: number;
   particleColor?: string;
   particleDensity?: number;
+  fullScreen?: boolean; // Add this line
+
 };
 export const SparklesCore = (props: ParticlesProps) => {
   const {
@@ -28,6 +30,7 @@ export const SparklesCore = (props: ParticlesProps) => {
     speed,
     particleColor,
     particleDensity,
+    fullScreen, // Add this line
   } = props;
   const [init, setInit] = useState(false);
   useEffect(() => {
@@ -65,7 +68,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
             },
             fullScreen: {
-              enable: false,
+              enable: fullScreen ?? false, // Add this line,
               zIndex: 1,
             },
 
