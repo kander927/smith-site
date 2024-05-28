@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { FloatingNav } from "@/components/ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/utils/cn";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 const Page = () => {
