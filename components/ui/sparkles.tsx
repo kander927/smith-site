@@ -87,8 +87,8 @@ export const SparklesCore = (props: ParticlesProps) => {
                   quantity: 4,
                 },
                 repulse: {
-                  distance: 200,
-                  duration: 0.4,
+                  distance: 25,
+                  duration: 1,
                 },
               },
             },
@@ -185,7 +185,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 drift: 0,
                 enable: true,
                 gravity: {
-                  acceleration: 9.81,
+                  acceleration: 0.3,
                   enable: false,
                   inverse: false,
                   maxSpeed: 50,
@@ -336,7 +336,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               twinkle: {
                 lines: {
-                  enable: false,
+                  enable: true,
                   frequency: 0.05,
                   opacity: 1,
                 },

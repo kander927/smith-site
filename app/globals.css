@@ -19,6 +19,9 @@
 .text-gradient {
   @apply bg-gradient-to-r from-orange-400 to-purple-600 text-transparent bg-clip-text
 }
+.rev-gradient {
+  @apply bg-gradient-to-r from-purple-600 to-orange-400 text-transparent bg-clip-text
+}
 
 body {
   color: rgb(var(--foreground-rgb));
