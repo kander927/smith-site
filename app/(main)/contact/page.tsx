@@ -8,6 +8,7 @@ import {
   IconBrandGoogle,
 } from "@tabler/icons-react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -112,6 +113,16 @@ const Contact = () => {
         </div> */}
       </form>
       {/* <BackgroundBeams /> */}
+      {/* Core component */}
+      <SparklesCore
+          background="transparent"
+          minSize={0.4}
+          maxSize={2}
+          particleDensity={50}
+          className="w-full h-full"
+          particleColor=""
+          fullScreen={true}
+        />
     </div>
     
   );
