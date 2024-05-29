@@ -1,4 +1,5 @@
 "use client";
+import { Socials } from "@/components/site/socials";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { SparklesCore } from "@/components/ui/sparkles";
@@ -94,7 +95,14 @@ const Contact = () => {
         </button>
 
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
-
+        <div className="mt-10">
+        <Socials
+          username="soapreal_"
+          github="soapreal_"
+          instagram="16rt____"
+          discord="462098132881375263"
+        />
+        </div>
         {/* <div className="flex flex-col space-y-4">
           <button
             className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
@@ -119,8 +127,8 @@ const Contact = () => {
         </div> */}
       </form>
       {/* <BackgroundBeams />  */}
-    </div>
 
+    </div>
   );
 };
 
