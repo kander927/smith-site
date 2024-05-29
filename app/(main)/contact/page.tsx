@@ -54,6 +54,7 @@ const Contact = () => {
 
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black mt-[8rem]">
+      
       <h2 className="font-bold text-xl text-neutral-200">Send something to me.</h2>
       <p className="text-sm max-w-sm mt-2 text-neutral-300"></p>
 
@@ -70,7 +71,7 @@ const Contact = () => {
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="example@gmail.com" type="email" value={formData.email} onChange={handleChange} />
+          <Input id="email" placeholder="example@example.com" type="email" value={formData.email} onChange={handleChange} />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Message</Label>
@@ -84,9 +85,9 @@ const Contact = () => {
           Send &rarr;
           <BottomGradient />
         </button>
-
+        
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
-
+        
         {/* <div className="flex flex-col space-y-4">
           <button
             className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
@@ -110,7 +111,7 @@ const Contact = () => {
           </button>
         </div> */}
       </form>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
     
   );
