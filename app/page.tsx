@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
 import { SparklesCore } from "@/components/ui/sparkles";
@@ -25,7 +26,7 @@ const Page = () => {
         <SparklesCore
           background="transparent"
           minSize={0.4}
-          maxSize={3}
+          maxSize={2}
           particleDensity={1000}
           className="w-full h-full"
           particleColor="#FFFFFF"
