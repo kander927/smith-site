@@ -13,8 +13,8 @@ const navItems = [
     icon: <IconHome className="h-4 w-4 text-white" />,
   },
   {
-    name: "Fart",
-    link: "/fart",
+    name: "Portfolio",
+    link: "/portfolio",
     icon: <IconUser className="h-4 w-4 text-white" />,
   },
   {
