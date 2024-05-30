@@ -43,8 +43,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="">
-          <div style={{ position: 'absolute', top: '40px', left: '40px' }}>
-            <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl" />
+          <div className="absolute top-10 left-10 z-50">
+            <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl z-[10]" />
           </div>
           <FloatingNav navItems={navItems} />
           {children}
