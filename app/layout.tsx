@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { IconHome, IconUser, IconMessage, IconImageInPicture } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,8 +42,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FloatingNav navItems={navItems} />
-        {children}</body>
+        <div className="">
+          <div style={{ position: 'absolute', top: '40px', left: '40px' }}>
+            <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl" />
+          </div>
+          <FloatingNav navItems={navItems} />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

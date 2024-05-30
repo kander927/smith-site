@@ -23,6 +23,8 @@
   @apply bg-gradient-to-r from-purple-600 to-orange-400 text-transparent bg-clip-text
 }
 
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -31,6 +33,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
 }
 
 @layer utilities {
