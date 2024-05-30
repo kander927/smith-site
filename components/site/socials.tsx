@@ -21,7 +21,7 @@ export function Socials({
   return (
     <Card>
       <CardHeader className="pb-3">
-        <CardTitle>Socials <span className='ml-[100px] text-blue-500'>[</span><span className='text-gradient'>{username}</span><span className='text-blue-500'>]</span></CardTitle>
+        <CardTitle>Socials  <span className='ml-[100px] text-blue-500'>[</span><span className='text-gradient'>{username}</span><span className='text-blue-500'>]</span></CardTitle>
         <CardDescription>
           Check out my socials for contact, or updates.
         </CardDescription>
