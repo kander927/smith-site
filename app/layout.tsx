@@ -5,6 +5,7 @@ import { IconHome, IconUser, IconMessage, IconImageInPicture, IconAlien } from "
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -34,6 +35,8 @@ const navItems = [
   },
 ];
 
+
+
 export const metadata: Metadata = {
   title: "soapreal",
   description: "made by 5skn",
@@ -48,9 +51,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="">
-          <div className="absolute top-10 left-10 z-50">
+          <a href="/" className="absolute top-10 left-10 z-50">
             <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl z-[10]" />
-          </div>
+          </a>
           <FloatingNav navItems={navItems} />
           {children}
         </div>
@@ -58,3 +61,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
