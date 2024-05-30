@@ -1,5 +1,6 @@
 "use client";
 import { Socials } from "@/components/site/socials";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { SparklesCore } from "@/components/ui/sparkles";
@@ -26,6 +27,11 @@ const Contact = () => {
     e.preventDefault();
     const { firstname, lastname, email, password } = formData;
 
+    if (!firstname || !lastname || !email || !password) {
+      console.error("All fields are required.");
+      return;
+    }
+
     try {
       const response = await fetch("/api/message", {
         method: "POST",
@@ -50,19 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black mt-[8rem]">
-
-      {/* Core component */}
-        {/* <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={2}
-          particleDensity={50}
-          className="w-full h-full"
-          particleColor=""
-          fullScreen={true}
-        /> */}
-
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black mt-[8rem] z-10">
       <h2 className="font-bold text-xl text-neutral-200">Send something to me.</h2>
       <p className="text-sm max-w-sm mt-2 text-neutral-300"></p>
 
@@ -98,36 +92,14 @@ const Contact = () => {
         <div className="mt-10">
         <Socials
           username="soapreal_"
-          github="soapreal_"
-          instagram="16rt____"
+          youtube="soapreal_"
+          // instagram="16rt____"
           discord="462098132881375263"
+          twitch="soapreal_"
         />
         </div>
-        {/* <div className="flex flex-col space-y-4">
-          <button
-            className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="button"
-          >
-            <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              GitHub
-            </span>
-            <BottomGradient />
-          </button>
-          <button
-            className="relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="button"
-          >
-            <IconBrandGoogle className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Google
-            </span>
-            <BottomGradient />
-          </button>
-        </div> */}
       </form>
-      {/* <BackgroundBeams />  */}
-
+      <BackgroundBeams /> 
     </div>
   );
 };
