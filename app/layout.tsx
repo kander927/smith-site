@@ -45,6 +45,18 @@ const navItems = [
 export const metadata: Metadata = {
   title: "soapreal",
   description: "made by 5skn",
+  openGraph: {
+    title: "soapreal",
+    description: "made by 5skn",
+    images: [
+      {
+        url: "/smithpfp.png", // Replace with the path to your image
+        width: 256, // Specify the width of the image
+        height: 256, // Specify the height of the image
+        alt: "Soapreal Logo", // Alt text for the image
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
