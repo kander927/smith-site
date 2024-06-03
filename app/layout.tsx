@@ -4,7 +4,7 @@ import "./globals.css";
 import { IconHome, IconUser, IconMessage, IconImageInPicture, IconAlien, IconVideo } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,11 +33,6 @@ const navItems = [
     link: "/fart",
     icon: <IconAlien className="h-4 w-4 text-white" />
   },
-  // {
-  //   name: "Click Me!",
-  //   link: "/youngsheldon",
-  //   icon: <IconVideo className="h-4 w-4 text-white" />
-  // },
 ];
 
 
@@ -65,6 +60,7 @@ export default function RootLayout({
           <FloatingNav navItems={navItems} />
           {children}
         </div>
+        <Analytics/>
       </body>
     </html>
   );
