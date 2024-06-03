@@ -45,6 +45,9 @@ const navItems = [
 export const metadata: Metadata = {
   title: "soapreal",
   description: "made by 5skn",
+  openGraph:{
+    images:'https://smith-eta-vercel.app/smithpfp.png'
+  }
 };
 
 export default function RootLayout({
