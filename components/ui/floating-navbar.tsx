@@ -8,6 +8,9 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import reactElementToJSXString from "react-element-to-jsx-string";
+import { toast, Toaster } from "sonner";
+import { ButtonsCard } from "../ui/tailwindcss-buttons";
 
 
 
@@ -58,7 +61,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border bg-black/[0.5]  backdrop-filter backdrop-blur-lg bg-opacity-30 border-white/[0.2] rounded-full   shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
+          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border bg-black/[0.5]  backdrop-filter backdrop-blur-lg bg-opacity-30 border-white/[0.2] rounded-lg   shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
           className
         )}
       >
@@ -76,7 +79,7 @@ export const FloatingNav = ({
         ))}
         <a
           href="https://www.5skn.xyz"
-          className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-white px-4 py-2 rounded-full"
+          className="border text-sm font-medium relative border-white/[0.2] inline-flex h-[40px] animate-shimmer items-center justify-center border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30"
         >
           <span>5skn.xyz</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />

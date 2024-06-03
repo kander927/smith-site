@@ -98,6 +98,7 @@ const Contact = () => {
           twitch="soapreal_"
         />
         </div>
+        
       </form>
       <BackgroundBeams /> 
     </div>
