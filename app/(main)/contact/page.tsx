@@ -60,7 +60,7 @@ const Contact = () => {
       <div className="absolute inset-0">
         <BackgroundBeams />
       </div>
-      <div className="relative max-w-md w-full mx-auto rounded-none md:rounded-2xl mt-[8rem] p-4 md:p-8 shadow-input  bg-opacity-1 backdrop-filter backdrop-blur-lg">
+      <div className="relative max-w-md w-full mx-auto rounded-none md:rounded-2xl mt-[8rem] p-4 md:p-8 shadow-input bg-black/[0.5] bg-opacity-30 backdrop-filter backdrop-blur-sm">
         <h2 className="font-bold text-xl text-neutral-200">Send something to me.</h2>
         <p className="text-sm max-w-sm mt-2 text-neutral-300"></p>
 
