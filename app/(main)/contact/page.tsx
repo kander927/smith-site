@@ -56,51 +56,53 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black mt-[8rem] z-10">
-      <h2 className="font-bold text-xl text-neutral-200">Send something to me.</h2>
-      <p className="text-sm max-w-sm mt-2 text-neutral-300"></p>
+    <div className="relative z-10 flex justify-center">
+      <div className="absolute inset-0">
+        <BackgroundBeams />
+      </div>
+      <div className="relative max-w-md w-full mx-auto rounded-none md:rounded-2xl mt-[8rem] p-4 md:p-8 shadow-input  bg-opacity-1 backdrop-filter backdrop-blur-lg">
+        <h2 className="font-bold text-xl text-neutral-200">Send something to me.</h2>
+        <p className="text-sm max-w-sm mt-2 text-neutral-300"></p>
 
-      <form className="my-8" onSubmit={handleSubmit}>
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-          <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="John" type="text" value={formData.firstname} onChange={handleChange} />
+        <form className="my-8" onSubmit={handleSubmit}>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+            <LabelInputContainer>
+              <Label htmlFor="firstname">First name</Label>
+              <Input id="firstname" placeholder="John" type="text" value={formData.firstname} onChange={handleChange} />
+            </LabelInputContainer>
+            <LabelInputContainer>
+              <Label htmlFor="lastname">Last name</Label>
+              <Input id="lastname" placeholder="Doe" type="text" value={formData.lastname} onChange={handleChange} />
+            </LabelInputContainer>
+          </div>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="email">Email Address</Label>
+            <Input id="email" placeholder="example@example.com" type="email" value={formData.email} onChange={handleChange} />
           </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Doe" type="text" value={formData.lastname} onChange={handleChange} />
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="password">Message</Label>
+            <Input id="password" placeholder="Hey, how are you." type="message" value={formData.password} onChange={handleChange} />
           </LabelInputContainer>
-        </div>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="example@example.com" type="email" value={formData.email} onChange={handleChange} />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="password">Message</Label>
-          <Input id="password" placeholder="Hey, how are you." type="message" value={formData.password} onChange={handleChange} />
-        </LabelInputContainer>
 
-        <button
-          className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
-        >
-          Send &rarr;
-          <BottomGradient />
-        </button>
+          <button
+            className="bg-gradient-to-br relative group/btn from-zinc-900 to-zinc-900 bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+            type="submit"
+          >
+            Send &rarr;
+            <BottomGradient />
+          </button>
 
-        <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" />
-        <div className="mt-10">
-        <Socials
-          username="soapreal_"
-          youtube="soapreal_"
-          // instagram="16rt____"
-          discord="462098132881375263"
-          twitch="soapreal_"
-        />
-        </div>
-        
-      </form>
-      <BackgroundBeams /> 
+          <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+          <div className="mt-10">
+            <Socials
+              username="soapreal_"
+              youtube="soapreal_"
+              discord="462098132881375263"
+              twitch="soapreal_"
+            />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
