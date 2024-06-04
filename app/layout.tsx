@@ -38,7 +38,7 @@ const navItems = [
 
 
 export const metadata: Metadata = {
-  title: "soapreal",
+  title: "soapreal_",
   description: "made by 5skn",
   openGraph:{
     images:'https://smith-eta-vercel.app/smithpfp.png'
