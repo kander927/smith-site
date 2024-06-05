@@ -42,7 +42,8 @@ export const metadata: Metadata = {
   description: "made by 5skn",
   openGraph:{
     images:'https://smith-eta-vercel.app/smithpfp.png'
-  }
+  },
+  metadataBase: new URL('https://smith-eta.vercel.app')
 };
 
 export default function RootLayout({
