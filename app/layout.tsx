@@ -5,6 +5,7 @@ import { IconHome, IconUser, IconMessage, IconImageInPicture, IconAlien, IconVid
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react"
+import { QueryProvider } from "@/providers/QueryClient";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,8 +41,8 @@ const navItems = [
 export const metadata: Metadata = {
   title: "soapreal_",
   description: "made by 5skn",
-  openGraph:{
-    images:'https://smith-eta-vercel.app/smithpfp.png'
+  openGraph: {
+    images: 'https://smith-eta-vercel.app/smithpfp.png'
   },
   metadataBase: new URL('https://smith-eta.vercel.app')
 };
@@ -52,18 +53,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="">
-          <a href="/" className="absolute top-10 left-10 z-50">
-            <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl z-[10]" />
-          </a>
-          <FloatingNav navItems={navItems} />
-          {children}
-        </div>
-        <Analytics/>
-      </body>
-    </html>
+    <QueryProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <div className="">
+            <a href="/" className="absolute top-10 left-10 z-50">
+              <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl z-[10]" />
+            </a>
+            <FloatingNav navItems={navItems} />
+            {children}
+          </div>
+          <Analytics />
+        </body>
+      </html>
+    </QueryProvider>
   );
 }
 
