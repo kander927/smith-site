@@ -42,7 +42,14 @@ export const metadata: Metadata = {
   title: "soapreal_",
   description: "made by 5skn",
   openGraph: {
-    images: 'https://smith-eta.vercel.app/smithpfp.png'
+    images: [
+      {
+        url: 'https://smith-eta.vercel.app/smithpfp.png',
+        height: 64,
+        width: 64,
+        alt: "soapreal_ image",
+      }
+    ]
   },
   metadataBase: new URL('https://smith-eta.vercel.app')
 };
