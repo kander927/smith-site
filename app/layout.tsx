@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   title: "soapreal_",
   description: "made by 5skn",
   openGraph: {
-    images: 'https://smith-eta-vercel.app/smithpfp.png'
+    images: 'https://smith-eta.vercel.app/smithpfp.png'
   },
   metadataBase: new URL('https://smith-eta.vercel.app')
 };
@@ -56,8 +56,8 @@ export default function RootLayout({
     <QueryProvider>
       <html lang="en">
         <body className={inter.className}>
-          <div className="">
-            <a href="/" className="absolute top-10 left-10 z-50">
+          <div>
+            <a href="/" className="scale absolute top-10 left-10 z-50 ">
               <Image src="/smithpfp.png" alt="Logo" width={100} height={100} className="rounded-xl z-[10]" />
             </a>
             <FloatingNav navItems={navItems} />

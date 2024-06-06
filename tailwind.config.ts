@@ -17,6 +17,7 @@ const config: Config = {
       
       animation: {
         shimmer: "shimmer 2s linear infinite",
+        wobble: 'wobble 0.6s ease-in-out',
       },
       keyframes: {
         shimmer: {
@@ -26,6 +27,13 @@ const config: Config = {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+        wobble: {
+          '0%': { transform: 'scale(1)' },
+          '25%': { transform: 'scale(1.05)' },
+          '50%': { transform: 'scale(0.95)' },
+          '75%': { transform: 'scale(1.02)' },
+          '100%': { transform: 'scale(1.05)' },
         },
       },
       backgroundImage: {
