@@ -1,5 +1,3 @@
-import { timeStamp } from "console";
-import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
 let lastRequestTime: number = 0;
