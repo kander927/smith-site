@@ -2,7 +2,7 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 
-export const projects = [
+const projects = [
   {
     title: "3 idiots try to hunt ghosts",
     description:"",
