@@ -1,14 +1,45 @@
 "use client";
-import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 const Page = () => {
-  return <ParallaxScroll images={images} />;
+  return (
+    <div className="max-w-5xl mx-auto px-8 mt-[6rem]">
+      <HoverEffect items={projects} />
+    </div>
+  );
 }
-
-const images = [
-    "/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png","/jesse2.png",
-
+export const projects = [
+  {
+    title: "3 idiots try to hunt ghosts",
+    description:"",
+    link: "https://www.youtube.com/embed/tkzcvk2FVDo",
+  },
+  {
+    title: "trying to spread democracy across the stars",
+    description:"",
+    link: "https://www.youtube.com/embed/bSM6IUrcFnU",
+  },
+  {
+    title: "",
+    description:"",
+    link: "https://www.youtube.com/embed/Kbn5-x7DgtI",
+  },
+  {
+    title: "",
+    description:"",
+    link: "https://www.youtube.com/embed/xprhguH0yCg",
+  },
+  {
+    title: "",
+    description:"",
+    link: "https://www.youtube.com/embed/Me5hqxdrQmc",
+  },
+  {
+    title: "super epic gaming",
+    description: "epic gaming",
+    link: "https://www.5skn.xyz"
+  }
+  
 ];
-
 
 export default Page
