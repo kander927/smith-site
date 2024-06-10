@@ -14,6 +14,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
 import { QueryProvider } from "@/providers/QueryClient";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -84,6 +85,7 @@ export default function RootLayout({
             {children}
           </div>
           <Analytics />
+          <SpeedInsights />
         </body>
       </html>
     </QueryProvider>
