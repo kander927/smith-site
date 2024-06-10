@@ -29,6 +29,10 @@
 .scale:hover {
   @apply scale-105 animate-wobble;
 }
+.sticky-image {
+  position: sticky;
+  top: 10px; /* Adjust the value as needed */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
