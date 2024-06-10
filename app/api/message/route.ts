@@ -24,8 +24,13 @@ export async function POST(req: Request) {
   try {
     const content = `**Firstname:** ${firstname} | **Lastname:** ${lastname} | **Email:** ${email} | **Message:** ${password}`;
 
+    const webhookUrl = process.env.WEBHOOK_URL;
+    if (!webhookUrl) {
+      throw new Error("WEBHOOK_URL is not defined in the environment variables.");
+    }
+
     await fetch(
-      "https://discord.com/api/webhooks/1230184199864975441/Xb4fsdXAAmU1CSY_ktNvF0ue6BhaKCwDztsP4bOVRlXHSp079fj80Jv4DjHmrHOIi0eu",
+      webhookUrl,
       {
         method: "POST",
         headers: {
