@@ -62,7 +62,7 @@ export const FloatingNav = ({
             className
           )}
         >
-          <a href="/">
+          {/* <a href="/">
             <Image
               src="/smithpfp.png"
               alt="Logo"
@@ -70,7 +70,7 @@ export const FloatingNav = ({
               height={40}
               className="scale rounded-md z-[10]"
             />
-          </a>
+          </a> */}
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
