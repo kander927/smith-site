@@ -36,15 +36,16 @@ const navItems = [
     icon: <IconMessage className="h-4 w-4 text-white" />,
   },
   {
-    name: "Fart",
-    link: "/fart",
-    icon: <IconAlien className="h-4 w-4 text-white" />,
-  },
-  {
     name: 'About',
     link: "/about",
     icon: <IconQuestionMark className="h-4 w-4 text-white"/>
   },
+  {
+    name: "Fart",
+    link: "/fart",
+    icon: <IconAlien className="h-4 w-4 text-white" />,
+  },
+ 
 ];
 
 export const metadata: Metadata = {
