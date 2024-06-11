@@ -22,8 +22,8 @@
 .text-rev-gradient {
   @apply bg-gradient-to-r from-purple-600 to-orange-400 text-transparent bg-clip-text;
 }
-.bg-gray-1000{
-  color:#1b1c1b;
+.red-gradient {
+  @apply bg-gradient-to-r from-orange-400 to-red-600 text-transparent bg-clip-text;
 }
 .scale {
   @apply transform transition-transform duration-300;
