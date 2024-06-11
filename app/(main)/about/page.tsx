@@ -23,14 +23,24 @@ import {
   SiYoutube,
 } from "react-icons/si";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12">
       <div className="absolute inset-0">
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
+        <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={2}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+            fullScreen={true}
+          />
       </div>
-      <div className="p-8 rounded-lg border-2 border-gray-700 bg-gray-1000 max-w-lg w-full ">
+      <div className="p-8 rounded-lg border-2 border-gray-700 bg-black max-w-lg w-full z-10 ">
         <h1 className="text-3xl font-bold mb-6 text-gradient text-center">
           About Us
         </h1>
@@ -58,13 +68,13 @@ const AboutPage = () => {
                     <DrawerTitle className="text-gradient text-2xl font-bold">
                       soapreal_
                     </DrawerTitle>
-                    <DrawerDescription className="text-gray-600">
-                      <div className="flex flex-wrap items-center">
+                    <DrawerDescription className="text-gray-600 backdrop-filter backdrop-blur-lg bg-opacity-30">
+                      <div className="flex flex-col items-start backdrop-filter backdrop-blur-lg bg-opacity-30">
                         <span className="mr-2 text-xl font-semibold text-white mb-4">
                           I am a big sexy guy
                         </span>
                         <span className="mr-2 text-2xl text-gradient">
-                          My tech stack:
+                          Stuff I Do
                         </span>
                         <ul className="list-disc pl-6">
                           <li className="flex items-center">
@@ -114,13 +124,13 @@ const AboutPage = () => {
                       5skn
                     </DrawerTitle>
                     <DrawerDescription className="text-gray-600">
-                      <div className="flex flex-wrap items-center">
+                      <div className="flex flex-col items-start">
                         <span className="mr-2 text-xl text-white font-semibold mb-4">
-                          I am big cool hacker coder man
+                          I am big cool hacker coder man 
                         </span>
 
                         <span className="mr-2 text-2xl text-gradient">
-                          My tech stack:
+                          Stuff I Do
                         </span>
                         <ul className="list-disc pl-6">
                           <li className="flex items-center">
