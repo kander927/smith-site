@@ -9,6 +9,7 @@ import {
   IconAlien,
   IconVideo,
   IconAd2,
+  IconQuestionMark,
 } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
@@ -39,11 +40,11 @@ const navItems = [
     link: "/fart",
     icon: <IconAlien className="h-4 w-4 text-white" />,
   },
-  // {
-  //   name: 'sigma',
-  //   link: "/",
-  //   icon: <IconAd2 className="h-4 w-4 text-white"/>
-  // },
+  {
+    name: 'About',
+    link: "/about",
+    icon: <IconQuestionMark className="h-4 w-4 text-white"/>
+  },
 ];
 
 export const metadata: Metadata = {

@@ -22,7 +22,9 @@
 .text-rev-gradient {
   @apply bg-gradient-to-r from-purple-600 to-orange-400 text-transparent bg-clip-text;
 }
-
+.bg-gray-1000{
+  color:#1b1c1b;
+}
 .scale {
   @apply transform transition-transform duration-300;
 }
