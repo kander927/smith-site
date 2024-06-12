@@ -1,28 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import {
-  IconHome,
-  IconUser,
-  IconMessage,
-  IconImageInPicture,
-  IconAlien,
-  IconVideo,
-  IconAd2,
-  IconQuestionMark,
-  IconAtom,
-  IconAtom2,
-  IconAtom2Filled,
-  IconAtomOff,
-} from "@tabler/icons-react";
+import { IconMessage, IconQuestionMark, IconAtom } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
 import { QueryProvider } from "@/providers/QueryClient";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { SiImagedotsc, SiImagej } from "react-icons/si";
-import ImageIcon from '@mui/icons-material/Image';
-import { HomeIcon, PhotographIcon, ChatIcon, QuestionMarkCircleIcon, XIcon } from '@heroicons/react/outline';
+import { HomeIcon, PhotographIcon } from "@heroicons/react/outline";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,16 +28,15 @@ const navItems = [
     icon: <IconMessage className="h-4 w-4 text-white" />,
   },
   {
-    name: 'About',
+    name: "About",
     link: "/about",
-    icon: <IconQuestionMark className="h-4 w-4 text-white"/>
+    icon: <IconQuestionMark className="h-4 w-4 text-white" />,
   },
   {
     name: "Bazinga",
     link: "/bazinga",
     icon: <IconAtom className="h-4 w-4 text-white" />,
   },
- 
 ];
 
 export const metadata: Metadata = {

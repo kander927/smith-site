@@ -61,6 +61,7 @@ const Contact = () => {
 
   return (
     <div className="relative z-10 flex justify-center">
+      <head><title>soapreal_ | Contact</title></head>
       <div className="absolute inset-0">
         <BackgroundBeams />
       </div>

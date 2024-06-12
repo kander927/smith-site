@@ -3,12 +3,16 @@ import React from "react";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Metadata } from "next";
 
+interface PageProps {
+  pageTitle: string;
+}
 
 
-const Page = () => {
+const Page: React.FC<PageProps> = ({ pageTitle }) => {
   return (
     <div className="h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center ">
-      <head><title>soapreal_ | Home</title></head>
+      
+      <Page pageTitle="soapreal_ |home"/>
       <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden">
         <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-gradient relative z-20">

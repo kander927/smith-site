@@ -28,6 +28,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12">
+        <head><title>soapreal_ | About</title></head>
       <div className="absolute inset-0">
         {/* <BackgroundBeams /> */}
         <SparklesCore

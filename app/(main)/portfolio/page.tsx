@@ -39,6 +39,7 @@ const projects = [
 const Page = () => {
   return (
     <div className="max-w-5xl mx-auto px-8 mt-[6rem]">
+      <head><title>soapreal_ | Portfolio</title></head>
       <HoverEffect items={projects} />
     </div>
   );

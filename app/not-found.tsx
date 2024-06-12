@@ -2,6 +2,7 @@ const NotFound = () => {
   return (
     <>
       <div className="min-h-screen relative w-full h-full">
+      <head><title>soapreal_ | Page not found.</title></head>
         <div className="absolute inset-0 w-full h-full bg-slate-900 [mask-image:radial-gradient(transparent,white)] pointer-events-none z-0"></div>
 
         <div className="relative flex flex-col place-items-center justify-center w-full h-screen z-10 ">
