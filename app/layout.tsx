@@ -10,12 +10,19 @@ import {
   IconVideo,
   IconAd2,
   IconQuestionMark,
+  IconAtom,
+  IconAtom2,
+  IconAtom2Filled,
+  IconAtomOff,
 } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/react";
 import { QueryProvider } from "@/providers/QueryClient";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SiImagedotsc, SiImagej } from "react-icons/si";
+import ImageIcon from '@mui/icons-material/Image';
+import { HomeIcon, PhotographIcon, ChatIcon, QuestionMarkCircleIcon, XIcon } from '@heroicons/react/outline';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +30,12 @@ const navItems = [
   {
     name: "Home",
     link: "/",
-    icon: <IconHome className="h-4 w-4 text-white" />,
+    icon: <HomeIcon className="h-4 w-4 text-white" />,
   },
   {
     name: "Portfolio",
     link: "/portfolio",
-    icon: <IconImageInPicture className="h-4 w-4 text-white" />,
+    icon: <PhotographIcon className="h-4 w-4 text-white" />,
   },
   {
     name: "Contact",
@@ -41,9 +48,9 @@ const navItems = [
     icon: <IconQuestionMark className="h-4 w-4 text-white"/>
   },
   {
-    name: "Fart",
-    link: "/fart",
-    icon: <IconAlien className="h-4 w-4 text-white" />,
+    name: "Bazinga",
+    link: "/bazinga",
+    icon: <IconAtom className="h-4 w-4 text-white" />,
   },
  
 ];

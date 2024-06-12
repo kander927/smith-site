@@ -4,7 +4,7 @@ const NotFound = () => {
       <div className="min-h-screen relative w-full h-full">
         <div className="absolute inset-0 w-full h-full bg-slate-900 [mask-image:radial-gradient(transparent,white)] pointer-events-none z-0"></div>
 
-        <div className="flex flex-col justify-center pt-[19rem]">
+        <div className="relative flex flex-col place-items-center justify-center w-full h-screen z-10 ">
           <h1 className="text-center text-6xl text-white relative z-10">
             Page Not found
           </h1>

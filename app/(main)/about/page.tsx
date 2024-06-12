@@ -25,7 +25,7 @@ import {
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { SparklesCore } from "@/components/ui/sparkles";
 
-const AboutPage = () => {
+const About = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-12">
       <div className="absolute inset-0">
@@ -181,4 +181,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
