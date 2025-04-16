@@ -31,7 +31,7 @@ const projects = [
   {
     title: "",
     description: "",
-    link: "https://youtu.be/LwIUVRIdpHo?si=Zt6r2bicK8ZuUI3w"
+    link: "https://www.youtube.com/embed/LwIUVRIdpHo"
   }
   
 ];
