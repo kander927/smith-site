@@ -29,9 +29,9 @@ const projects = [
     link: "https://www.youtube.com/embed/Me5hqxdrQmc",
   },
   {
-    title: "super epic gaming",
-    description: "epic gaming",
-    link: "https://www.5skn.xyz"
+    title: "",
+    description: "",
+    link: "https://youtu.be/LwIUVRIdpHo?si=Zt6r2bicK8ZuUI3w"
   }
   
 ];
