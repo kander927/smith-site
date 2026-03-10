@@ -34,7 +34,7 @@ const Page = () => {
           <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_10%,white)]"></div>
         </div>
         <p className="text-rev-gradient text-[20px] text-center mt-2  relative z-20">
-          This is a site for soapreal_. Made by 5skn for my CS final project
+          This is a site for soapreal_. Made by 16rt for my CS final project
         </p>
       </div>
     </div>
