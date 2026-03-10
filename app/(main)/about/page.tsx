@@ -104,7 +104,7 @@ const About = () => {
           </div>
           <div className="flex flex-col items-center">
             <h1 className="text-2xl text-gradient font-semibold mb-7 mt-4">
-              5skn
+              16rt
             </h1>
             <Drawer>
               <DrawerTrigger asChild>
