@@ -122,7 +122,7 @@ const About = () => {
                 <div className="mx-auto w-full max-w-sm">
                   <DrawerHeader>
                     <DrawerTitle className="text-2xl text-gradient font-bold">
-                      5skn
+                      16rt
                     </DrawerTitle>
                     <DrawerDescription className="text-gray-600">
                       <div className="flex flex-col items-start">
