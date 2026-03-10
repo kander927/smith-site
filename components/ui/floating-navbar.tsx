@@ -83,13 +83,13 @@ export const FloatingNav = ({
               <span className="hidden sm:block text-sm">{navItem.name}</span>
             </Link>
           ))}
-          <a
+          {/* <a
             href="https://www.5skn.xyz"
             className="border text-sm font-medium relative border-white/[0.2] inline-flex h-[40px] animate-shimmer items-center justify-center border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30"
           >
             <span>5skn.xyz</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
-          </a>
+          </a> */}
         </motion.div>
       </AnimatePresence>
     </div>
